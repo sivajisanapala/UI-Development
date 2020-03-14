@@ -1,0 +1,34 @@
+:root {
+  padding:10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #002c50;
+}
+.topic-item {
+  flex: 33.3333%;
+  min-height: 30px;
+  text-align:center;
+  line-height: 30px;
+  span {
+    background: #038cfc;
+    display: inline-block;
+    min-height: 45px;
+    min-width: 190px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 9px;
+    color: white;
+    &:hover{
+      background: #0062ff;
+    }
+  }
+ &:focus {
+  outline: none;
+  }
+}

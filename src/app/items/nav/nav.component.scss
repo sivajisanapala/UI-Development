@@ -1,0 +1,27 @@
+.cont {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  
+  div+p{
+    flex:4;
+    color:#fff;
+  }
+}
+
+.toggle_menu {
+  flex:1;
+  text-align: right;
+  height: 27px;
+  
+  span {
+    width: 22px;
+    height: 4px;
+    margin-top: 4px;
+    margin-left: 80%;
+    border-radius: 5px;
+    background-color: #fff;
+    display: block;
+  }
+}

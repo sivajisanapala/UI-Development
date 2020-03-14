@@ -1,0 +1,5 @@
+<div class="container">
+  <p class="topic-item" *ngFor="let item of items" routerLinkActive="active-topic" [routerLink]='item.url'><span>{{item.name}}</span></p>
+</div>
+
+<router-outlet></router-outlet>

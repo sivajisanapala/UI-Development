@@ -1,0 +1,69 @@
+<h2>HTML</h2>
+<p>References:</p>
+<ol><li>https://acadgild.com/blog/html5-new-features</li></ol>
+<h3>HTML5 Structure</h3>
+<pre>
+  &lt;!doctype html&gt;
+  &lt;html&gt;
+  &lt;head&gt;  
+   &lt;meta charset="utf-8"&gt;   
+   &lt;title&gt;It's a title... wave!&lt;/title&gt; 
+  &lt;/head&gt; 
+  &lt;body&gt; 
+   &lt;p&gt;Content is &lt;span&gt;KING&lt;/span&gt;&lt;/p&gt;!
+  &lt;/body&gt; 
+  &lt;/html&gt;
+
+</pre>
+<h4>1) HTML5 New Features</h4>
+<p> HTML5 offers new semantic elements to define different parts of a web page which will help you to create your web pages easily.</p>
+<ul>
+	<li>
+    <b>Elements</b><br>
+    Semantic elements which give an elegant structure to the web pages like: <br>
+    &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;nav&gt;, &lt;header&gt;, &lt;figure&gt;, and &lt;figcaption&gt; and newly added &lt;main&gt;. <br>  
+    Media related elements like: &lt;video&gt; and &lt;audio&gt;
+  </li>
+	<li>
+    <b>Form control attributes</b><br>
+    Like a placeholder, autofocus, email, URL, required, pattern, number, range, color, tel, search, date, date-time, file, required as an attribute. autofocus , autocomplete=”off”, autocomplete=”on”,data list ,min and max ,enable, read-only , disable ,size.
+  </li>
+	<li>
+    <b>New HTML5 API’s (Application Programming Interfaces)</b><br>
+    <ul>
+      <li><b>HTML Geolocation:</b> 
+        The HTML Geolocation API is used to get the geographical position of a user. Since this can compromise privacy, the position is not available unless the user approves it. <br>
+       
+            <!-- if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        }
+
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+        "Longitude: " + position.coords.longitude;
+      } -->
+      </li>
+      <li><b>HTML Drag and Drop:</b> Drag and drop is a very common feature. It is when you “grab” an object and drag it to a different location. <a target="_blank" href="https://www.w3schools.com/html/html5_draganddrop.asp">Example</a></li>
+      <li>
+       <b> HTML Local/Session Storage:</b> With local storage, web applications can store data locally within the user’s browser. <br>
+       localStorage/SessionStorage.setItem("Key","value"); <br>
+       localStorage/SessionStorage.getItem("Key");
+      </li>
+      <li>
+        <b>HTML Application Cache:</b> Application caching mechanism lets web-based applications run offline.With application cache, it is easy to make an offline version of a web application, by creating a cache manifest file. Developers can use the Application Cache (AppCache) interface to specify resources that the browser should cache and make available to offline users. Applications that are cached load and work correctly even if users click the refresh button when they are offline.
+      </li>
+      <li><b>HTML Web Workers:</b> Web Workers provide a simple means for web content to run scripts in background threads.</li>
+      <li><b>HTML SSE:</b> Server-Sent Events allow a web page to get updates from a server.</li>
+    </ul>
+  </li>
+	<li><b>CANVAS</b>:is Raster based (composed of pixel). Where the animations can be done using the script and it is not scalable.</li>
+	<li><b>SVG</b>:The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define two-dimensional vector based graphics for the web. Unlike raster image (e.g. .jpg, .gif, .png, etc.), a vector image can be scaled up or down to any extent without losing the image quality.</li>
+	<li><b>**Cross browser Compatibility tools</b><br>
+    <ul>
+	<li> Modernizer: provides a programmatic way to check for many HTML5 and CSS3 different features. In order to use modernizer, include the following code snippet<br>
+  <pre>&lt;script src=”modnernizr.min.js” type=”text/javascript”&gt;&lt;/script&gt; <br> if (Modernizr.canvas)</pre></li>
+	<li>Caniuse: It is extremely useful because it provides information about many HTML5 features in modern browsers. If you want to check it out go through this site http://caniuse.com/.</li>
+</ul>
+  </li>
+</ul>
+<hr>

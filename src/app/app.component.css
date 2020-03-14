@@ -1,0 +1,17 @@
+p {
+  font-family: Lato;
+}
+.wrapper {
+  display: flex;
+}
+app-left {
+  flex:1;
+  border-right: 1px solid #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  min-height: 100vh;
+}
+app-right {
+  flex:5;
+  display: block;
+   min-height: 100vh;
+}
