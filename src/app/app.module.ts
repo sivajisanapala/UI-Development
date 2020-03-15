@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Route } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LeftComponent } from './items/left/left.component';
@@ -22,32 +22,33 @@ import { BootstrapComponent } from './items/dashboard/brief/bootstrap/bootstrap.
 import { AjaxComponent } from './items/dashboard/brief/ajax/ajax.component';
 import { NpmComponent } from './items/dashboard/brief/npm/npm.component';
 
-const routing : Route = [
+const appRoutes: Routes = [
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'}, //redirectTo useful when having child routes
   {path:'dashboard', component: DashboardComponent,
-  children:[
-    {path: '', component:BboaComponent},
-    {path:'angularBlocks', component:BboaComponent},
-    {path:'forms', component:FormsComponent},
-    {path:'routing', component:RoutingComponent},
-    {path:'componentcommunication', component:CbcComponent},
-    {path:'api',component: ApiComponent},
-    {path:'typescript',component:TypescriptComponent},
-    {path:'javascript',component:JscriptComponent},
-    {path:'html',component:Html5Component},
-    {path:'css',component:Css3Component},
-    {path:'bootstrap',component:BootstrapComponent},
-    {path:'ajax',component:AjaxComponent},
-    {path:'npm',component:NpmComponent}
-  ]},
+      children:[
+        {path: '', component:BboaComponent},
+        {path:'angularBlocks', component:BboaComponent},
+        {path:'forms', component:FormsComponent},
+        {path:'routing', component:RoutingComponent},
+        {path:'componentcommunication', component:CbcComponent},
+        {path:'api',component: ApiComponent},
+        {path:'typescript',component:TypescriptComponent},
+        {path:'javascript',component:JscriptComponent},
+        {path:'html',component:Html5Component},
+        {path:'css',component:Css3Component},
+        {path:'bootstrap',component:BootstrapComponent},
+        {path:'ajax',component:AjaxComponent},
+        {path:'npm',component:NpmComponent}
+      ]
+},
   {path:'register', component:RegisterComponent}
-] 
+];
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(routing) ],
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
   declarations: [ AppComponent, LeftComponent, NavComponent, RightComponent, DashboardComponent, RegisterComponent, BboaComponent, FormsComponent, RoutingComponent, CbcComponent, ApiComponent, TypescriptComponent, JscriptComponent, Html5Component, Css3Component, BootstrapComponent, AjaxComponent, NpmComponent ],
   bootstrap:    [ AppComponent ]
 })
-
-
-export class AppModule { }
+export class AppModule { 
+ 
+ }
