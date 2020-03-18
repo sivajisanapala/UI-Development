@@ -19,6 +19,11 @@ app-nav {
   display: block;
   background: #206af3c0;
 }
+
+.rcontainer {
+  padding: 5px 20px;
+}
+
 @media screen and (max-width:992px){
   .left-menu {
     display:none!important;

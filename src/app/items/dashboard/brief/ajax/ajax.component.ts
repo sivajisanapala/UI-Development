@@ -43,7 +43,7 @@ export class AjaxComponent implements OnInit {
           $("#our_selector").append('<span> You have ordered :'+ order.name +'for RS:'+ order.price);s
         },
         error: function(){
-          alert("Error posting Order")
+          alert("Error posting Order");
         };
     });
   });  
