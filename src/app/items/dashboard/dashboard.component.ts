@@ -17,7 +17,7 @@ items =[
     {url:'forms', name:'Forms'},
     {url:'routing', name:'Routing'},
     {url:'componentcommunication', name:'Components Interaction'},
-    {url:'api', name:'API comsumption'},
+    {url:'api', name:'API consumption'},
     {url:'typescript', name:'TypreScript'},
     {url:'javascript', name:'JavaScript'},
     {url:'html', name:'HTML5'},

@@ -12,4 +12,12 @@ export class JscriptComponent implements OnInit {
   ngOnInit() {
   }
 
+  dupfilter = `
+      var arr =[1,1,1,2,2,2,3,3,3,3,4,4,6,7,9, "john", "john"];
+       uniqueArray = arr.filter(function(i, a){
+				return arr.indexOf(i) == a;
+      })
+      uniqueArray1 = [...new Set(arr)];
+      document.querySelector("#farray").innerHTML = uniqueArray1;`
+
 }

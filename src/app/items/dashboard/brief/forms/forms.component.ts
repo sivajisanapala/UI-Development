@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-forms',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public fb: FormBuilder) { }
 
   ngOnInit() {
   }
 
+ cities: any = ['Florida', 'South Dakota', 'Tennessee', 'Michigan'];
+
+  registrationForm = this.fb.group({
+    cityName:['']
+  })
+ onSubmit(){
+   alert(this.registrationForm.value)
+ }
 }

@@ -1,5 +1,10 @@
 <div class="rcontainer">
-  <p>
-forms works!
-</p>
+  <form action="" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <select class="custom-select">
+      <option disabled>Choose City</option>
+      <option *ngFor="let city of cities" [ngValue]="city">{{city}}</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
 </div>
