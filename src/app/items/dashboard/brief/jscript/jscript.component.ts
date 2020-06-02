@@ -10,8 +10,18 @@ export class JscriptComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
+ templiteral = `
+  var name = 'Your name is \$\{first\} \$\{last\}.'
+  `
+destructuring = `
+const name = user.name;
+const age = user.age;
+
+Now it has become => const{name,age}= user;
+`
   dupfilter = `
       var arr =[1,1,1,2,2,2,3,3,3,3,4,4,6,7,9, "john", "john"];
 
