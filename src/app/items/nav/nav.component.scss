@@ -4,24 +4,31 @@
   align-items: center;
   justify-content: center;
   
-  div+p{
-    flex:4;
+  p{
+    flex:1;
     color:#fff;
+    text-align: center;
   }
-}
 
-.toggle_menu {
-  flex:1;
-  text-align: right;
+  .toggle_menu {
+  flex:4;
+  text-align: left;
   height: 27px;
   
   span {
     width: 22px;
     height: 4px;
     margin-top: 4px;
-    margin-left: 80%;
+    margin-left: 0%;
     border-radius: 5px;
     background-color: #fff;
     display: block;
   }
 }
+  .nav-profile {
+    
+  }
+}
+
+
+
