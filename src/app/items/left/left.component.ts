@@ -13,11 +13,18 @@ export class LeftComponent implements OnInit {
   ngOnInit() {
   }
 
-   routes =[
+ routes =[
      {name:"Dashboard", url:"dashboard"},
-     {name:"Register",url:"register"}
+     {name:"Register",url:"register",
+     inner:[
+       {name:"Dashboard", url:"dashboard"},
+     ]
+     }
    ]
 
+function (){
+  alert(routes.name);
+}
    @HostBinding('class.is-open')
   isOpen = false;
 

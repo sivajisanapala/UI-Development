@@ -1,3 +1,9 @@
 <ul>
-	<li *ngFor="let route of routes" routerLinkActive="active-item" [routerLink]="route.url">{{route.name}}</li>
+	<li *ngFor="let route of routes" routerLinkActive="active-item" [routerLink]="route.url">{{route.name}}
+    <ul>
+      <li *ngFor="let innerele of routes.inner" routerLinkActive="active-item" [routerLink]="innerele.url">{{innerele.name}}
+        
+      </li>
+    </ul>
+  </li>
 </ul>
